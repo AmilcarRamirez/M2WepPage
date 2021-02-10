@@ -37,3 +37,57 @@ body, html {
     vertical-align: middle;
     transform: translate(-50%, -50%);
 }
+
+.promoting{
+    background-color: rgba(55,63,81,1);
+    color: rgb(216,219,226,1);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prom-left{
+    background-color: rgba(55,63,81,1);
+    
+    text-align: right;
+    
+    width: 50%;
+    float: left;
+    
+
+}
+
+.prom-right{
+    background-color: rgba(55,63,81,1);
+
+    text-align: left;
+
+    width: 50%;
+    float: right;
+    
+   
+}
+
+.about-us{
+
+    background-image:  url("Images/987fa1b5cb2c50746d597e0c271fb81a 1.png");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.title{
+    
+    
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+
