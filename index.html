@@ -4,10 +4,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>M2</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function changeCowork(){
+                var table = document.getElementById("table-img");
+                table.setAttribute("src", "/Images/Table_Coworking.png");
+            }
+            function changeOffice(){
+                var table = document.getElementById("table-img");
+                table.setAttribute("src", "/Images/Table_Oficinas.png");
+            }
+        </script>
     </head>
     <body>
 
@@ -15,49 +25,98 @@
         <div class="hero">
             <div class="hero-text">
                 <h1> M2 </h1>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur accusamus officiis incidunt, dicta sapiente odio modi suscipit cum commodi doloremque obcaecati adipisci expedita tenetur sed sequi deserunt quasi ea?</h3>
+                <h3>Oficinas para tu negocio</h3>
             </div>
         </div>
 
         <!-- Second section of the web page. -->
         <div class="promoting">
-            <h1 class="title">¿Por que elegirnos?</h1>
+            <h2 class="title">¿Por que elegirnos?</h2>
             <!-- Create a container for the two blocks with one block information and other with picture -->
-            <div class="container">
-                <div class="prom-left">
-                    <h2>Oficinas equipadas</h2>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+            <div class="section-container">
+                <div class="text-container">
+                    <div class="prom-text">
+                        <h4>Oficinas equipadas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+                        </p>
+                    </div>
                 </div>
-                <div class="prom-right">
-                    <img src="Images/DSCN1877 1.png">
-                </div>
+                <img class="sec-img" src="Images/Front.png">
             </div>
-            <div class="container">
-                <div class="prom-left">
-                    <img src="Images/Lo-que-debes-saber-sobre-accidentes-en-estacionamientos-1280x720 2.png">
+            <div class="section-container" id="show-desktop">
+                <img class="sec-img" src="Images/Office.png ">
+                <div class="text-container">
+                    <div class="prom-text">
+                        <h4>Servicios adicionales</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+                        </p>
+                    </div>
                 </div>
-                <div class="prom-right">
-                    <h2>Servicios adicionales</h2>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
-                </div>
+                
             </div>
-            <div class="container">
-                <div class="prom-left">
-                    <h2>Diversas Oficinas</h2>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+            <div class="section-container" id="show-mobile" >
+                
+                <div class="text-container">
+                    <div class="prom-text">
+                        <h4>Servicios adicionales</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+                        </p>
+                    </div>
                 </div>
-                <div class="prom-right">
-                    <img src="Images/DSCN1893 1.png">
+                <img class="sec-img" src="Images/Office.png ">
+            </div>
+            <div class="section-container">
+                <div class="text-container">
+                    <div class="prom-text">
+                        <h4>Diversas Oficinas</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.
+                        </p>
+                    </div>
                 </div>
+                
+                <img class="sec-img" src="Images/Cowoking.png">
             </div>
         </div>
         <!-- Table creation -->
-        <div>
+        <div class="table">
+            <h2 class="title" style="margin-top: 2rem;">Planes</h2>
+            <div class="selectors">
+                <button onclick="changeOffice()">Oficinas</button>
+                <button onclick="changeCowork()">Coworking</button>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
+                <img id="table-img" class="table-img" src="/Images/Table_Oficinas.png" alt="">
+            </div>
             
         </div>
         <!-- Acerca de nosotros -->
-        <div class="about-us">
-            
+        <div class="about-us" >
+            <div class="section-container" style="height: 100%;">
+                <div class="about-section">
+                    <h2 class="title" style="padding-top: 3rem;">Acerca de nosotros</h2>
+                    <p style="font-size: x-large; padding-bottom: 3rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi natus quam officia consequuntur, eaque excepturi vel? Itaque, dolores odio ad magni temporibus ipsam repudiandae ut? Expedita sint voluptatem repellat maiores.</p>    
+                </div>
+            </div>
+        </div>
+        <!-- Contactanos -->
+        <div class="contact">
+
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <h2 style="margin-bottom: 0px;">M2</h2>
+            <p>Calle 29 num 231 Francisco de Montejo </p>
+            <div class="horario">
+                Horario <br>
+                Lunes a Viernes <br>
+                8:00 AM - 6:30 PM <br>
+                Sabados <br>
+                8:00 AM - 2:00 PM
+            </div>
+            <div class="social-media">
+                <a href="mailto:mail@gmail.com"><img style="width: 40px;" src="/Images/Mail.png" alt=""></a>
+                <a href=""><img style="width: 40px;" src="/Images/Facebook.png" alt=""></a>
+            </div>
         </div>
     </body>
 </html>
